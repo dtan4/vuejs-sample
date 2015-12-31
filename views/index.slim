@@ -6,9 +6,8 @@ div#vue-table
   table.table
     thead
       tr
-        th Name
-        th Age
-        th Address
+        th v-for="field in fields"
+          = "{{field}}"
     tbody
       tr v-for="person in table"
         td

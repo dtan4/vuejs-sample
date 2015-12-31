@@ -2,6 +2,7 @@ new Vue({
   el: '#vue-table',
   data: {
     status: false,
+    fields: ['name', 'age', 'address']
     table: [],
   },
   created: ->
