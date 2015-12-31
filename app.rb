@@ -24,4 +24,18 @@ class App < Sinatra::Base
       ]
     }.to_json
   end
+
+  post "/table" do
+    content_type :json
+    params = JSON.parse(request.body.read)
+
+    {
+      status: true,
+      table: [
+        { name: "Alice", age: 23, address: "New York" },
+        { name: "Bob", age: 30, address: "San Francisco" },
+        params,
+      ]
+    }.to_json
+  end
 end

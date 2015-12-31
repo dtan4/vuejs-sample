@@ -1,6 +1,10 @@
 h1 Vue.js Sample
 
 div#vue-table
+  input type="text" name="name" v-model="newName"
+  input type="text" name="age" v-model="newAge"
+  input type="text" name="age" v-model="newAddress"
+  button.btn.btn-default @click="addPerson" Add Person
   h2
     = "status: {{status}}"
   table.table
