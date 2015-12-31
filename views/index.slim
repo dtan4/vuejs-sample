@@ -1,7 +1,19 @@
 h1 Vue.js Sample
 
-#demo
-  ul
-    li v-for="record in commits"
-      a.commit :href="record.html_url" target="_blank"
-        = "{{record.sha.slice(0, 7)}}"
+div#vue-table
+  h2
+    = "status: {{status}}"
+  table.table
+    thead
+      tr
+        th Name
+        th Age
+        th Address
+    tbody
+      tr v-for="person in table"
+        td
+          = "{{person.name}}"
+        td
+          = "{{person.age}}"
+        td
+          = "{{person.address}}"
