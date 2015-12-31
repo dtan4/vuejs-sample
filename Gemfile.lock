@@ -1,6 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.10.0)
+    execjs (2.6.0)
     puma (2.15.3)
     rack (1.6.4)
     rack-protection (1.5.3)
@@ -19,6 +24,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-script
   puma
   sinatra (~> 1.4.6)
   slim

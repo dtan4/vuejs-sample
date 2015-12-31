@@ -1,1 +1,7 @@
 h1 Vue.js Sample
+
+#demo
+  ul
+    li v-for="record in commits"
+      a.commit :href="record.html_url" target="_blank"
+        = "{{record.sha.slice(0, 7)}}"

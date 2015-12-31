@@ -9,6 +9,10 @@ class App < Sinatra::Base
     slim :index
   end
 
+  get "/application.js" do
+    coffee :application
+  end
+
   get "/table" do
     content_type :json
 
