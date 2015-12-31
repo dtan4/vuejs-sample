@@ -1,6 +1,10 @@
 require "sinatra/base"
 
 class App < Sinatra::Base
+  configure :development do
+    set :server, :puma
+  end
+
   get "/" do
     slim :index
   end
